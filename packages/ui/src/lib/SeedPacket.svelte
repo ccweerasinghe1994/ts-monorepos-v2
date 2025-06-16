@@ -1,10 +1,10 @@
 <script lang="ts">
-import { Tween } from 'svelte/motion'
+import type { SeedPacketModel } from '@seeds/models'
 import { cubicOut } from 'svelte/easing'
-import SeedPacketBack from './SeedPacketBack.svelte'
-import type { SeedPacketModel } from '../models/seed-packet.model.js'
+import { Tween } from 'svelte/motion'
 import { rgbToCss } from '../utils/color.js'
 import { wrapText } from '../utils/formatting.js'
+import SeedPacketBack from './SeedPacketBack.svelte'
 interface Props {
 	seedPacket: SeedPacketModel
 }

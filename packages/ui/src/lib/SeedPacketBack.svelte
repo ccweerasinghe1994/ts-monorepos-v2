@@ -1,10 +1,10 @@
 <script lang="ts">
-import type { SeedPacketModel } from '../models/seed-packet.model.js'
+import type { SeedPacketModel } from '@seeds/models'
 import {
-	formatUSDAZone,
-	formatSeedInfo,
 	formatDistance,
 	formatEdibleParts,
+	formatSeedInfo,
+	formatUSDAZone,
 } from '../utils/formatting.js'
 
 interface Props {
