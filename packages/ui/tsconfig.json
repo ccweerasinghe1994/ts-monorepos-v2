@@ -12,5 +12,5 @@
         "vite.config.ts",
         "svelte.config.js",
         "eslint.config.mts"
-    ]
+, "../server/tests/api.test.ts", "../server/tests/api.test.ts", "../server/src/app.ts"    ]
 }
