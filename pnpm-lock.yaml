@@ -11,6 +11,9 @@ importers:
       '@manypkg/cli':
         specifier: ^0.24.0
         version: 0.24.0
+      syncpack:
+        specifier: 14.0.0-alpha.14
+        version: 14.0.0-alpha.14(tsx@4.20.1)
 
   packages/models:
     dependencies:
@@ -2338,6 +2341,76 @@ packages:
   sync-message-port@1.1.3:
     resolution: {integrity: sha512-GTt8rSKje5FilG+wEdfCkOcLL7LWqpMlr2c3LRuKt/YXxcJ52aGSbGBAdI4L3aaqfrBt6y711El53ItyH1NWzg==}
     engines: {node: '>=16.0.0'}
+
+  syncpack-darwin-arm64@14.0.0-alpha.14:
+    resolution: {integrity: sha512-1Ln+GKiSHrMXxvD3kldWQ5RdLzfyErLFPv22BTuOGpER6W8onimXTfRn64b1oF7vPOJoZT0b8VwqB0Xi3jym7w==}
+    cpu: [arm64]
+    os: [darwin]
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
+
+  syncpack-darwin-x64@14.0.0-alpha.14:
+    resolution: {integrity: sha512-wvw3gpTgSEjo8OHhsxXMPq2OQ66rrhODssYOJWRPCQ1U8EpUadb1dwn8GXye9X3wG+OkKO80BghlV4BS2aJKxw==}
+    cpu: [x64]
+    os: [darwin]
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
+
+  syncpack-linux-arm64@14.0.0-alpha.14:
+    resolution: {integrity: sha512-sQJTEMCPUFVWTNxXLdvUwdCm91slIiPyrZLDcA8mTlmc0PYKMI3FKZShPSDfOLyT9WBXCNO13WrmmeTLhbt7uw==}
+    cpu: [arm64]
+    os: [linux]
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
+
+  syncpack-linux-x64@14.0.0-alpha.14:
+    resolution: {integrity: sha512-6kkvsYQqRp95DI6yxhKkIQ4O5K3EWJS2WeYqlHHeP484ywJRySiwlGLUYPOsB56NXSS6rswA0+Ta1I5B5tT5/w==}
+    cpu: [x64]
+    os: [linux]
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
+
+  syncpack-windows-arm64@14.0.0-alpha.14:
+    resolution: {integrity: sha512-i+Jt00puwSuu14fuuQuLg2cy7gTWV/MoH0r0ovustg9JQDSVKTZGN8+Ff61z3NEkJwtyBT7VWs4jnZaBP4P71g==}
+    cpu: [arm64]
+    os: [win32]
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
+
+  syncpack-windows-x64@14.0.0-alpha.14:
+    resolution: {integrity: sha512-nSfbfbYpWwZ50qd2oJJMHl6iSLRoAC+ZinX2uqC4mUmXdOhUVHyXbDO+g8M8asPCqJDzfkpvDHno42ihIG+wsg==}
+    cpu: [x64]
+    os: [win32]
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
+
+  syncpack@14.0.0-alpha.14:
+    resolution: {integrity: sha512-GAzviYz5prL2gIRC+qMe0OE5zxQYbAIbqDWMkP27KfDzCubfbnX3ztJmn6pn/Jg/M6cvL3GEp2SXUeFJVUjyvA==}
+    engines: {node: '>=14.17.0'}
+    hasBin: true
+    peerDependencies:
+      tsx: '4'
+    peerDependenciesMeta:
+      tsx:
+        optional: true
 
   tailwindcss@4.1.9:
     resolution: {integrity: sha512-anBZRcvfNMsQdHB9XSGzAtIQWlhs49uK75jfkwrqjRUbjt4d7q9RE1wR1xWyfYZhLFnFX4ahWp88Au2lcEw5IQ==}
@@ -4739,6 +4812,46 @@ snapshots:
       sync-message-port: 1.1.3
 
   sync-message-port@1.1.3: {}
+
+  syncpack-darwin-arm64@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      tsx: 4.20.1
+    optional: true
+
+  syncpack-darwin-x64@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      tsx: 4.20.1
+    optional: true
+
+  syncpack-linux-arm64@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      tsx: 4.20.1
+    optional: true
+
+  syncpack-linux-x64@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      tsx: 4.20.1
+    optional: true
+
+  syncpack-windows-arm64@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      tsx: 4.20.1
+    optional: true
+
+  syncpack-windows-x64@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      tsx: 4.20.1
+    optional: true
+
+  syncpack@14.0.0-alpha.14(tsx@4.20.1):
+    optionalDependencies:
+      syncpack-darwin-arm64: 14.0.0-alpha.14(tsx@4.20.1)
+      syncpack-darwin-x64: 14.0.0-alpha.14(tsx@4.20.1)
+      syncpack-linux-arm64: 14.0.0-alpha.14(tsx@4.20.1)
+      syncpack-linux-x64: 14.0.0-alpha.14(tsx@4.20.1)
+      syncpack-windows-arm64: 14.0.0-alpha.14(tsx@4.20.1)
+      syncpack-windows-x64: 14.0.0-alpha.14(tsx@4.20.1)
+      tsx: 4.20.1
 
   tailwindcss@4.1.9: {}
 

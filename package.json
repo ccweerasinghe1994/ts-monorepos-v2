@@ -1,20 +1,21 @@
 {
-    "private": true,
-    "name": "seeds",
-    "version": "0.0.1",
-    "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2",
-    "scripts": {
-        "build": "pnpm --color run -r build",
-        "lint": "pnpm --color run -r lint",
-        "test": "pnpm --color run -r test",
-        "format": "pnpm --color run -r format",
-        "dev": "pnpm --color run -r dev",
-        "check": "pnpm --color run -r check"
-    },
-    "engines": {
-        "node": "24.1.0"
-    },
-    "devDependencies": {
-        "@manypkg/cli": "^0.24.0"
-    }
+  "name": "seeds",
+  "version": "0.0.1",
+  "devDependencies": {
+    "@manypkg/cli": "^0.24.0",
+    "syncpack": "14.0.0-alpha.14"
+  },
+  "engines": {
+    "node": "24.1.0"
+  },
+  "private": true,
+  "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2",
+  "scripts": {
+    "build": "pnpm --color run -r build",
+    "check": "pnpm --color run -r check",
+    "dev": "pnpm --color run -r dev",
+    "format": "pnpm --color run -r format",
+    "lint": "pnpm --color run -r lint",
+    "test": "pnpm --color run -r test"
+  }
 }

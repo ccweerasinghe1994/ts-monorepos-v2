@@ -1,20 +1,12 @@
 {
   "name": "@seeds/ui",
-  "private": true,
   "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "dev-client": "vite",
-    "dev": "concurrently -n \"Server,Client\" -c \"yellow,blue\" \"pnpm run dev-server\" \"pnpm run dev-client\"",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "test:ui": "vitest --ui",
-    "test:coverage": "vitest run --coverage",
-    "lint": "eslint .",
-    "format": "prettier --write src/**/*.{ts,svelte} tests/**/*.ts {tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js,eslint.config.mts}"
+  "dependencies": {
+    "@seeds/models": "workspace:*",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "winston": "^3.17.0",
+    "yaml": "^2.8.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
@@ -46,15 +38,23 @@
     "vite": "^6.3.5",
     "vitest": "^3.2.3"
   },
-  "dependencies": {
-    "@seeds/models": "workspace:*",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "winston": "^3.17.0",
-    "yaml": "^2.8.0"
-  },
   "engines": {
     "node": "24.1.0"
   },
-  "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2/tree/main/packages/ui"
+  "private": true,
+  "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2/tree/main/packages/ui",
+  "scripts": {
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+    "dev": "concurrently -n \"Server,Client\" -c \"yellow,blue\" \"pnpm run dev-server\" \"pnpm run dev-client\"",
+    "dev-client": "vite",
+    "format": "prettier --write src/**/*.{ts,svelte} tests/**/*.ts {tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js,eslint.config.mts}",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest"
+  },
+  "type": "module"
 }
