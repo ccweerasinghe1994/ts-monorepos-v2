@@ -4,7 +4,6 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    
     "dev-client": "vite",
     "dev": "concurrently -n \"Server,Client\" -c \"yellow,blue\" \"pnpm run dev-server\" \"pnpm run dev-client\"",
     "build": "vite build",
@@ -48,13 +47,14 @@
     "vitest": "^3.2.3"
   },
   "dependencies": {
-    "@seeds/models":"workspace:*",
+    "@seeds/models": "workspace:*",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "winston": "^3.17.0",
     "yaml": "^2.8.0"
   },
   "engines": {
-    "node": "24.1.0"  
- }
+    "node": "24.1.0"
+  },
+  "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2/tree/main/packages/ui"
 }

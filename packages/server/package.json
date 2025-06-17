@@ -32,5 +32,6 @@
         "express": "^5.1.0",
         "winston": "^3.17.0",
         "yaml": "^2.8.0"
-    }
+    },
+    "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2/tree/main/packages/server"
 }
