@@ -5,6 +5,7 @@
     "@eslint/js": "^9.28.0",
     "@manypkg/cli": "^0.24.0",
     "@types/node": "^24.0.0",
+    "concurrently": "^9.1.2",
     "eslint": "^9.28.0",
     "knip": "^5.61.1",
     "prettier": "^3.5.3",
@@ -19,12 +20,12 @@
   "private": true,
   "repository": "https://github.com/ccweerasinghe1994/ts-monorepos-v2",
   "scripts": {
+    "dev": "concurrently -n \"Models,Server,Client\" -c \"yellow,green,blue\" \"pnpm --filter=models run dev\" \"pnpm --filter=server run dev\" \"pnpm --filter=ui run dev\"",
     "build": "pnpm --color run -r build",
     "check": "pnpm --color run -r check",
-    "dev": "pnpm --color run -r dev",
     "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
     "lint": "eslint .",
     "test": "pnpm --color run -r test",
-    "optimize":"knip"
+    "optimize": "knip"
   }
 }
