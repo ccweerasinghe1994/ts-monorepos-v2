@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "dependencies": {
     "@seeds/models": "workspace:*",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "winston": "^3.17.0",
     "yaml": "^2.8.0"
   },
   "devDependencies": {
@@ -15,8 +12,6 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/svelte": "^5.2.8",
     "@tsconfig/svelte": "^5.0.4",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
     "@types/node": "^24.0.0",
     "@vitest/coverage-v8": "^3.2.3",
     "@vitest/ui": "^3.2.3",

@@ -6,6 +6,7 @@
     "@manypkg/cli": "^0.24.0",
     "@types/node": "^24.0.0",
     "eslint": "^9.28.0",
+    "knip": "^5.61.1",
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.4.0",
     "syncpack": "14.0.0-alpha.14",
@@ -23,6 +24,7 @@
     "dev": "pnpm --color run -r dev",
     "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
     "lint": "eslint .",
-    "test": "pnpm --color run -r test"
+    "test": "pnpm --color run -r test",
+    "optimize":"knip"
   }
 }

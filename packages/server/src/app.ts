@@ -1,7 +1,7 @@
-import express from 'express'
 import cors from 'cors'
+import express from 'express'
+import { ServerConfig, type ServerConfigParams } from './config.js'
 import { createRouter } from './routes.js'
-import ServerConfig, { type ServerConfigParams } from './config.js'
 
 const createRequestLoggingMiddleware = (cfg: ServerConfig): express.RequestHandler => {
 	return (req, res, next) => {
