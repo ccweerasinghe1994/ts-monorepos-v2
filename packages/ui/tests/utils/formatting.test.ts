@@ -1,16 +1,12 @@
+import { Distance, SeedPacketInfo, USDAHardinessZoneRangeMap } from '@seeds/models'
 import { describe, expect, it } from 'vitest'
 import {
-	USDAHardinessZoneRangeMap,
-	SeedPacketInfo,
-	Distance,
-} from '../../src/models/seed-packet.model.js'
-import {
-	formatUSDAZone,
-	formatSeedInfo,
+	capitalizeWords,
 	formatDistance,
 	formatEdibleParts,
+	formatSeedInfo,
+	formatUSDAZone,
 	wrapText,
-	capitalizeWords,
 } from '../../src/utils/formatting.js'
 
 describe('formatUSDAZone', () => {

@@ -1,8 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type {
-	Distance,
-	USDAHardinessZoneRangeMap,
-} from '../src/seed-packet.model.js'
+import type { Distance, USDAHardinessZoneRangeMap } from '../src/seed-packet.model.js'
 
 describe('SeedPacketModel Types', () => {
 	it('should allow valid USDAHardinessZoneRangeMap with single zone', () => {
