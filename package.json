@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "devDependencies": {
     "@manypkg/cli": "^0.24.0",
-    "syncpack": "14.0.0-alpha.14"
+    "syncpack": "14.0.0-alpha.14",
+    "prettier-plugin-svelte": "^3.4.0",
+    "prettier": "^3.5.3"
   },
   "engines": {
     "node": "24.1.0"
@@ -14,7 +16,7 @@
     "build": "pnpm --color run -r build",
     "check": "pnpm --color run -r check",
     "dev": "pnpm --color run -r dev",
-    "format": "pnpm --color run -r format",
+    "format": "prettier --write packages/*/{src,tests}/**/*.ts packages/*/{tailwind.config.js,postcss.config.cjs,vite.config.ts,svelte.config.js}",
     "lint": "pnpm --color run -r lint",
     "test": "pnpm --color run -r test"
   }
