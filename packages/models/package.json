@@ -1,8 +1,9 @@
 {
   "name": "@seeds/models",
   "version": "0.0.1",
-  "dependencies": {},
   "devDependencies": {
+    "@microsoft/api-documenter": "^7.26.27",
+    "@microsoft/api-extractor": "^7.52.8",
     "@vitest/coverage-v8": "^3.2.3",
     "@vitest/ui": "^3.2.3",
     "eslint": "^9.28.0",
@@ -22,5 +23,5 @@
     "test:watch": "vitest"
   },
   "type": "module",
-  "types": "dist/index.d.ts"
+  "types": "dist/models.d.ts"
 }
