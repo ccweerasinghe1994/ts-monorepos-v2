@@ -8,6 +8,7 @@
     "concurrently": "^9.1.2",
     "eslint": "^9.28.0",
     "knip": "^5.61.1",
+    "lerna": "^8.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-svelte": "^3.4.0",
     "syncpack": "14.0.0-alpha.14",
@@ -27,5 +28,6 @@
     "lint": "eslint .",
     "test": "pnpm --color run -r test",
     "optimize": "knip"
-  }
+  },
+  "dependencies": {}
 }

@@ -103,3 +103,7 @@ export function wrapText(text: string, maxCharsPerLine: number = 12): string[] {
 
 	return lines
 }
+
+export function capitalizeWords(str: string): string {
+	return str.replace(/\b\w/g, (char) => char.toUpperCase())
+}
